@@ -37,7 +37,10 @@ body {
     font-size: 12px;
     text-transform: uppercase;
 }
-
+.list-inline a:hover {
+    color:rgb(91, 201, 115);
+    transition: color 0.5s ease-in-out;
+}
 .w-50 {
     width: 50%;
 }
@@ -47,10 +50,8 @@ h3 {
     text-align: center;
 }
 
-
-
 /* buttons & text */
-.btn {
+.btn{
     padding: 5px 20px;
     border-radius: 5px;
     text-transform: uppercase;
@@ -237,31 +238,32 @@ article {
 
 /* footer */
 footer {
-    height: 100px;
-    line-height: 100px;
+    height: 150px;
+    line-height: 150px;
     margin-top: 20px;
     background-color: lightgrey;
 }
 
 .footer-left {
-    width: 60%;
+    width: 50%;
 }
 .footer-left h4 {
     font-size: 25px;
 }
 
 .footer-right {
-    position: relative;
-    width: 40%;
-    text-align: left;
+    width: 50%;
+    text-align: center;
+    
 }
 .footer-right p {
-    display: inline-block
+    display: inline-block;
+    margin-right: 30px;
 }
 
 .footer-right .select {
-    width: 25%;
-    margin: 0 20px;
+    width: 20%;
+    margin: 0 30px 0 0;
     line-height: 20px;
     text-align: left;
     border-bottom: 1px solid grey;
@@ -270,4 +272,13 @@ footer {
     content: '\25BC';
     position: relative;
     left: 55px;  
+}
+
+.help-btn {
+    position: fixed;
+    bottom: 0;
+    right: 20%;
+    z-index: 2;
+    margin-top: 30px;
+    line-height: 20px;
 }
