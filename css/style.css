@@ -172,7 +172,7 @@ h1 {
 .center-img,
 .right-img {
     position: relative;
-    height: 150px;
+    height: 150px; 
 }
 .left-img img,
 .center-img img,
@@ -227,6 +227,10 @@ article {
 }
 .discover-text a {
     color: rgb(16, 133, 201);
+}
+.discover-text a:hover {
+    color: rgb(91, 201, 115);
+    transition: color 0.5s ease-in-out;
 }
 /* /discover */
 /* /main */
