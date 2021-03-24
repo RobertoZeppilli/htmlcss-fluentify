@@ -92,7 +92,6 @@ h3 {
 
 /* header  */
 header {
-    height: 550px;
     background-image: url(../img/background-header.png);
     background-repeat: no-repeat;
     background-position: 110% 108%;
@@ -100,7 +99,6 @@ header {
     background-color: rgb(16, 133, 201);
 }
 .header-nav {
-    height: 80px;
     line-height: 80px;
 }
 .logo {
@@ -112,12 +110,10 @@ header {
 }
 .nav-left {
     width: 45%;
-    height: 100%;
     text-align: left;    
 }
 .nav-right {
     width: 40%;
-    height: 100%;
     text-align: right;   
 }
 
@@ -144,14 +140,13 @@ h1 {
 /* disclaimer */
 .disclaimer {
     position: relative;
-    height: 100px;
+    height: 120px;
     padding: 10px 0;
     text-align: center;
     background-color: lightgrey;
 }
 .disclaimer-text {
     position: absolute;
-    height: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -176,25 +171,23 @@ h1 {
 .left-img,
 .center-img,
 .right-img {
+    position: relative;
     height: 150px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
-.left-img {
-    background-image: url(../img/profile.svg);
-}
-.center-img {
-    background-image: url(../img/computer.svg);    
-}
-.right-img {
-    background-image: url(../img/doc.svg);
-    
+.left-img img,
+.center-img img,
+.right-img img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 article {
     width: 70%;
     margin: 20px auto;
 }
+
 .little-hr {
     position: relative;
     left: 50%;
@@ -208,14 +201,16 @@ article {
 #discover {
     height: 400px;
 }
-
 .discover-left {
     height: 100%;
-    background-image: url(../img/mountain.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
 }
-
+.discover-left img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .discover-text {
     position: relative;
     top: 20px;
@@ -238,7 +233,6 @@ article {
 
 /* footer */
 footer {
-    height: 150px;
     line-height: 150px;
     margin-top: 20px;
     background-color: lightgrey;
@@ -253,20 +247,24 @@ footer {
 
 .footer-right {
     width: 50%;
-    text-align: center;
-    
+    text-align: center; 
 }
-.footer-right p {
-    display: inline-block;
+.footer-right span {
     margin-right: 30px;
 }
-
 .footer-right .select {
+    display: inline-block;
     width: 20%;
     margin: 0 30px 0 0;
     line-height: 20px;
     text-align: left;
     border-bottom: 1px solid grey;
+}
+.footer-right .select:hover {
+    color:rgb(91, 201, 115);
+    border-bottom: 1px solid rgb(91, 201, 115);
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
 }
 .footer-right .select::after {
     content: '\25BC';
