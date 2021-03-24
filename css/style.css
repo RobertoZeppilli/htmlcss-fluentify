@@ -29,11 +29,13 @@ body {
 }
 .list-inline li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .list-inline a {
     text-decoration: none;
     color: white;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 .w-50 {
@@ -51,6 +53,8 @@ h3 {
 .btn {
     padding: 5px 20px;
     border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 .btn-green{
     background-color: rgb(91, 201, 115);
@@ -106,12 +110,12 @@ header {
     vertical-align: middle;
 }
 .nav-left {
-    width: 50%;
+    width: 45%;
     height: 100%;
     text-align: left;    
 }
 .nav-right {
-    width: 35%;
+    width: 40%;
     height: 100%;
     text-align: right;   
 }
@@ -197,5 +201,73 @@ article {
     width: 20%;
     margin: 20px 0;
 }
+/* /about */
 
+/* discover */
+#discover {
+    height: 400px;
+}
 
+.discover-left {
+    height: 100%;
+    background-image: url(../img/mountain.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.discover-text {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 60%;
+}
+.discover-text h4 {
+    font-size: 28px;
+}
+.discover-text p {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 16px;
+}
+.discover-text a {
+    color: rgb(16, 133, 201);
+}
+/* /discover */
+/* /main */
+
+/* footer */
+footer {
+    height: 100px;
+    line-height: 100px;
+    margin-top: 20px;
+    background-color: lightgrey;
+}
+
+.footer-left {
+    width: 60%;
+}
+.footer-left h4 {
+    font-size: 25px;
+}
+
+.footer-right {
+    position: relative;
+    width: 40%;
+    text-align: left;
+}
+.footer-right p {
+    display: inline-block
+}
+
+.footer-right .select {
+    width: 25%;
+    margin: 0 20px;
+    line-height: 20px;
+    text-align: left;
+    border-bottom: 1px solid grey;
+}
+.footer-right .select::after {
+    content: '\25BC';
+    position: relative;
+    left: 55px;  
+}
