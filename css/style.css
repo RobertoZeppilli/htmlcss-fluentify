@@ -85,7 +85,7 @@ h3 {
 }
 
 .txt-grey {
-    font-size: 12px;
+    font-size: 14px;
     color: grey;
     text-align: center;
 }
@@ -155,10 +155,6 @@ h1 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-.disclaimer-text p {
-    font-size: 15px;
-    color: grey;
-}
 /* /disclaimer */
 
 /* about */
@@ -218,7 +214,6 @@ article {
 .discover-text p {
     margin: 20px 0;
     text-align: left;
-    font-size: 16px;
 }
 .discover-text a {
     color: rgb(16, 133, 201);
@@ -270,7 +265,7 @@ footer {
 .footer-right .select::after {
     content: '\25BC';
     position: relative;
-    left: 85px;
+    left: 75px;
 }
 
 /* help-btn */
