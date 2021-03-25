@@ -4,34 +4,21 @@
     padding: 0;
 }
 
-
-/* debug */
-
-#banner {
-    height: 400px;
-    /* background-color: blue; */
-}
-#about {
-    height: 300px;
-    /* background-color: green; */
-}
-#plan-structure {
-    height: 400px;
-    /* background-color: blue; */
-}
-#faq {
-    height: 100px;
-    /* background-color: purple; */
-}
-footer {
-    height: 300px;
-    /* background-color: red; */
-}
-
 /* common */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .w-50 {
     width: 50%;
 }
+
 .float-left {
     float: left;
 }
@@ -40,30 +27,28 @@ footer {
     display: table;
     clear: both;
 }
-.container {
-    width: 80%;
-    margin: 0 auto;
-    /* background-color: orange; */
-    height: 100%;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
+/* buttons */
 .btn {
     display: inline-block;
-    padding: 20px 30px 20px 10px;
     background-color: rgb(91, 201, 115);
     border: 1px solid rgb(91, 201, 115);
     border-radius: 10px;
     color: white;
     text-transform: uppercase;
 }
+.btn-banner {
+    padding: 15px 30px 15px 10px;
+}
+.btn-about {
+    padding: 10px;
+}
 .btn:hover {
     background-color:rgb(16, 133, 201);
     transition: background 0.5s ease-in-out;
 }
 
+/* text */
 .small-text {
     color: grey;
     font-size: 12px;
@@ -76,32 +61,49 @@ body {
     color: grey;
     font-size: 18px;
 }
-/* header */
-header {
-    /* background-color: red; */
-    height: 300px;
-    margin-bottom: 30px;
+.space-text {
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.white-text {
+    color: white;
+    font-size: 18px;
 }
 
-.text-container {
+#header-text a,
+#about-text a {
+    text-decoration: none;
+}
+
+/* color bars */
+.bar {
+    height: 5px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px grey;
+}
+
+/* header */
+header {
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+#header-text {
     position: relative;
     top: 50px;
     left: 50px;
     width: 70%;
 }
-.text-container h1 {
-    letter-spacing: 1px;
+#header-text h1 {
+    font-size: 25px;
 }
-.text-container p {
+#header-text p {
     margin: 40px 0;
-}
-.text-container a {
-    text-decoration: none;
 }
 
 .disclaimer {
    position: relative;
-   bottom: 20px;
+   bottom: 25px;
    text-align: center;
    color: rgb(16, 133, 201);
 }
@@ -119,9 +121,10 @@ header {
 
 /* main */
 
-/* section-top */
+/* banner */
 section#banner {
     border-top: 1px solid lightgrey;
+    margin-bottom: 100px;      
 }
 
 #banner-img {
@@ -152,9 +155,164 @@ section#banner {
     margin-bottom: 20px;
 }
 #banner-text a {
-    color: rgb(16, 133, 201); 
+    color: rgb(16, 133, 201);
 }
 #banner-text a:hover {
     color: rgb(91, 201, 115);
     transition: color 0.5s ease-in-out;
+}
+/* /banner */
+
+/* about */
+section#about {
+    position: relative;
+    height: 350px;
+    background-color: rgb(0, 0, 102);
+}
+#about-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20%;
+}
+#about h3 {
+    font-size: 22px;
+    color: white;
+}
+#about p {
+    margin: 30px 0;
+}
+/* /about */
+
+/* plan structure */
+section#plan-structure {
+    height: 400px;
+    width: 60%;
+    margin: 0 auto;
+}
+#plan-structure-title {
+    margin: 80px 0;
+}
+#plan-structure-title h3 {
+    text-align: center;
+}
+
+.plan {
+    width: calc(100% / 3 - 20px);
+    margin: 0 10px;
+}
+.plan-img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+.plan-img img {
+    height: 100%;
+}
+.plan-text h4 {
+    font-size: 20px;
+}
+.plan-text p {
+    margin: 20px 0;
+}
+.azure-bar {
+    background-color: #cce5ff;
+}
+.orange-bar {
+    background-color: #ffb266;
+}
+.green-bar {
+    background-color: #66ffb2;
+}
+#azure-link {
+    color: #cce5ff;
+}
+#orange-link {
+    color: #ffb266;
+}
+#green-link {
+    color: #66ffb2;
+}
+#azure-link:hover {
+    color: #66b2ff;
+    transition: color 0.5s ease-in-out;
+}
+#orange-link:hover {
+    color: #cc6600;
+    transition: color 0.5s ease-in-out;
+}
+#green-link:hover {
+    color: #00994c;
+    transition: color 0.5s ease-in-out;
+}
+/* /plan structure */
+
+/* footer */
+footer {
+    height: 300px;
+}
+
+/* faq */
+#faq {
+    position: relative;
+    height: 100px;
+    background-color: rgb(0, 0, 102);
+}
+#faq-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#faq-text h4 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.orange-text {
+    color: #ffb266;
+}
+
+/* footer left */
+#footer {
+    height: 200px;
+    position: relative;
+    background-color: #004c99;
+}
+#footer-list {
+    
+    width: 70%;
+}
+#footer-list h5 {
+    color: white;   
+}
+#footer-list ul {
+    margin-top: 10px;
+    list-style: none;
+}
+#footer-list a {
+    text-decoration: none;
+}
+#footer-list a:hover {
+    color: #ffb266;
+    transition: color 0.5s ease-in-out;
+}
+.footer-list-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* footer right */
+#company {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+.company-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.company-text p.white-text {
+    margin: 30px 0;
+    font-weight: bold;
 }
