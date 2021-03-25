@@ -68,7 +68,6 @@ h3 {
     border: 1px solid white;
 }
 .btn-large{
-    display: inline-block;
     padding: 20px;
     text-decoration: none;
 }
@@ -83,6 +82,9 @@ h3 {
     border: 1px solid rgb(7, 61, 110);
     background-color: rgb(7, 61, 110);
     transition: background 0.5s ease-in-out;
+}
+.jumbotron-text .btn-large {
+    display: inline-block;
 }
 
 .txt-grey {
@@ -100,6 +102,7 @@ header {
     background-color: rgb(16, 133, 201);
 }
 .header-nav {
+    height: 80px;
     line-height: 80px;
 }
 .logo {
@@ -231,6 +234,7 @@ article {
 /* footer */
 footer {
     height: 150px;
+    line-height: 150px;
     margin-top: 20px;
     background-color: lightgrey;
 }
@@ -240,11 +244,10 @@ footer {
 }
 .footer-left h4 {
     font-size: 25px;
-    line-height: 150px;
 }
 
 .footer-right {
-    margin-top: 45px;
+    position: relative;
     width: 40%;
     text-align: center;
 }
