@@ -176,7 +176,8 @@ h1 {
 }
 .left-img img,
 .center-img img,
-.right-img img {
+.right-img img,
+.discover-left img {
     height: 100%;
     position: absolute;
     left: 50%;
@@ -204,12 +205,6 @@ article {
 .discover-left {
     height: 100%;
     position: relative;
-}
-.discover-left img {
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .discover-text {
     position: relative;
@@ -253,19 +248,18 @@ footer {
     width: 40%;
     text-align: center;
 }
+
 .footer-right span {
     margin-right: 30px;
 }
+
 .footer-right .select {
     display: inline-block;
-    width: 25%;
+    width: 30%;
     margin: 0 30px 0 0;
     line-height: 20px;
     text-align: left;
     border-bottom: 1px solid grey;
-}
-.footer-right a.btn-large {
-    margin-left: 30px;
 }
 .footer-right .select:hover {
     color:rgb(91, 201, 115);
@@ -276,14 +270,13 @@ footer {
 .footer-right .select::after {
     content: '\25BC';
     position: relative;
-    left: 55px;
+    left: 85px;
 }
 
+/* help-btn */
 .help-btn {
     position: fixed;
     bottom: 0;
     right: 15%;
     z-index: 2;
-    margin-top: 30px;
-    line-height: 20px;
 }
