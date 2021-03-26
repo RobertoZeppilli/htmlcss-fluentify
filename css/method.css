@@ -28,6 +28,15 @@ body {
     clear: both;
 }
 
+#about-text,
+.footer-list-text,
+.company-text,
+#faq-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* buttons */
 .btn {
     display: inline-block;
@@ -74,6 +83,7 @@ body {
 #about-text a {
     text-decoration: none;
 }
+
 
 /* color bars */
 .bar {
@@ -170,9 +180,6 @@ section#about {
     background-color: rgb(0, 0, 102);
 }
 #about-text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 20%;
 }
 #about h3 {
@@ -257,21 +264,23 @@ footer {
     height: 100px;
     background-color: rgb(0, 0, 102);
 }
-#faq-text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 #faq-text h4 {
     color: white;
     font-size: 22px;
     margin-bottom: 10px;
 }
+#faq-text a {
+    text-decoration: none;
+}
+#faq-text a:hover {
+    color: #cc6600;
+    transition: color 0.5s ease-in-out;
+}
 .orange-text {
     color: #ffb266;
 }
 
-/* footer left */
+/* footer left - footer-list */
 #footer {
     height: 200px;
     position: relative;
@@ -295,22 +304,12 @@ footer {
     color: #ffb266;
     transition: color 0.5s ease-in-out;
 }
-.footer-list-text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-/* footer right */
+/* footer right - company details */
 #company {
     float: right;
     width: 30%;
     text-align: right;
-}
-.company-text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }
 .company-text p.white-text {
     margin: 30px 0;
